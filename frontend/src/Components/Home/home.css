@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #171810;
+}
+.container {
+  padding: 25px 20% 0 20%;
+  background-color: #171810;
+}
+.topic {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.actionset {
+  bottom: 0px;
+  gap: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  position: fixed;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #171810;
+}
+
+.input-style {
+  padding: 12px 20px;
+  width: 100%;
+  border: 2px solid #2e2f2e;
+  border-radius: 90px;
+  background-color: #2e2f2e;
+  font-size: 16px;
+  color: white;
+  outline: none;
+}
+.btn {
+  border: none;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 12px 40px;
+  margin: 0 auto;
+  background: white;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+  fill: #171810;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #171810;
+  font-size: medium;
+}
+
+.word_gen {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: space-between;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.margin{
+    margin-bottom: 25px;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.my_d{
+    margin-top: 15px;
+    color: #2e2f2eb0;
+    font-weight: 500;
+}
