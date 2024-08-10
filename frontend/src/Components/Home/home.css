@@ -17,6 +17,7 @@ body {
   font-size: 40px;
   text-align: center;
   font-weight: 600;
+  cursor: pointer;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 10px;
@@ -93,6 +94,7 @@ input[type="number"] {
   margin-top: 15px;
   color: #2e2f2eb0;
   font-weight: 500;
+  cursor: pointer;
 }
 .output_para {
   background-color: #2e2f2e;
@@ -134,6 +136,7 @@ input[type="number"] {
 }
 .main_set{
   margin-bottom: 200px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {
