@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  transition: all 450ms ease-in-out;
 }
 body {
   background-color: #171810;
@@ -28,6 +29,7 @@ body {
   align-items: center;
   width: 60%;
   position: fixed;
+  padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   background-color: #171810;
@@ -81,14 +83,70 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.margin{
-    margin-bottom: 25px;
+.margin {
+  margin-bottom: 25px;
 }
 input[type="number"] {
   -moz-appearance: textfield;
 }
-.my_d{
-    margin-top: 15px;
-    color: #2e2f2eb0;
-    font-weight: 500;
+.my_d {
+  margin-top: 15px;
+  color: #2e2f2eb0;
+  font-weight: 500;
 }
+.output_para {
+  background-color: #2e2f2e;
+  padding: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 17px;
+  border-radius: 8px;
+  color: white;
+  width: 100%;
+}
+.hed_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: #1f201f;
+  padding: 10px;
+  border-radius: 8px;
+}
+.topic_esay {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0 0 10px 0;
+  text-transform: capitalize;
+}
+.copy_btn {
+  color: white;
+  background-color: #2e2f2e;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 450ms ease-in-out;
+}
+.main_set{
+  margin-bottom: 200px;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    padding: 10px 10px 0 10px;
+    background-color: #171810;
+  }
+  .actionset{
+    width: 96%;
+    text-align: center;
+  }
+  .topic{
+    font-size: 30px;
+  }
+}
+
