@@ -5,12 +5,12 @@ import "./home.css";
 
 function Home() {
   const [topic, setTopic] = useState("");
-  const [wordCount, setWordCount] = useState(""); // State for user-specified word count
-  const [essay, setEssay] = useState(""); // Initialize as an empty string
+  const [wordCount, setWordCount] = useState("");
+  const [essay, setEssay] = useState(""); 
   const [loading, setLoading] = useState(false);
   const [copySuccess, setCopySuccess] = useState("");
-  const [generatedWordCount, setGeneratedWordCount] = useState(0); // State for calculated word count
-  const [essayTopic, setEssayTopic] = useState(""); // State for storing the essay topic
+  const [generatedWordCount, setGeneratedWordCount] = useState(0); 
+  const [essayTopic, setEssayTopic] = useState("");
 
   const handleInputChange = (event) => {
     setTopic(event.target.value);
@@ -32,9 +32,9 @@ function Home() {
     }
 
     setLoading(true);
-    setEssay(""); // Reset essay before generating a new one
-    setGeneratedWordCount(0); // Reset generated word count
-    setEssayTopic(topic); // Set the essay topic
+    setEssay(""); 
+    setGeneratedWordCount(0); 
+    setEssayTopic(topic); 
 
     try {
       const response = await axios.post(
@@ -51,7 +51,7 @@ function Home() {
         {
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer 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`, // Replace with your OpenAI API key
+            Authorization: `Bearer `, // Replace with your OpenAI API key
           },
         }
       );
@@ -105,7 +105,7 @@ function Home() {
             {typedText && (
               <div>
                 <h3 className="topic_esay">{essayTopic}</h3>{" "}
-                {/* Display the essay topic */}
+            
                 <p>{typedText}</p>
               </div>
             )}
